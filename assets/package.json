@@ -1,0 +1,16 @@
+{
+  "name": "curriculo-assets",
+  "version": "1.0.0",
+  "description": "Curriculo project assets",
+  "main": "index.js",
+  "scripts": {
+    "restore": "npm install",
+    "build": "tailwindcss -i ./styles.css -o ../wwwroot/css/tailwind/tailwind.min.css --minify",
+    "watch": "tailwindcss -i ./styles.css -o ../wwwroot/css/tailwind/tailwind.min.css --watch"
+  },
+  "author": "Mateus Ryan <mthryan@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
