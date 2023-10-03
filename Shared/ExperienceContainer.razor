@@ -1,0 +1,32 @@
+<div class="grid grid-cols-[11.5rem_1fr] align-start">
+    <div class="flex flex-col">
+        <span class="font-bold">@Title</span>
+        <span>@Project</span>
+        @if (To is not null) {
+            <span class="text-gray-400">@From a @To</span>
+        } else {
+            <span class="text-gray-400">@From</span>
+        }
+    </div>
+
+    <div class="border-s border-gray-300 ps-2">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+
+    [Parameter]
+    public string? Project { get; set; }
+
+    [Parameter]
+    public string? From { get; set; }
+
+    [Parameter]
+    public string? To { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

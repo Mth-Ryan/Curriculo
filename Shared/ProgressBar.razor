@@ -1,0 +1,9 @@
+<div class="w-full h-2 bg-gray-400 overflow-hidden">
+    <div class="h-full bg-gray-500" style="width: @(Progress)%;">
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int Progress { get; set; } = 0;
+}
