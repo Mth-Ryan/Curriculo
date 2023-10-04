@@ -1,100 +1,18 @@
 ﻿@page "/"
+@using Curriculo.Data
+@inject LabelsService LabelsServ
 
 <PageTitle>Index</PageTitle>
 
-<h1 class="text-2xl font-bold">
-    Mateus Ryan Carmo Costa
-</h1>
-<h2 class="text-lg">
-    Engenheiro de Software e Físico
-</h2>
+<SideBar LabelsContent="@labelsContents?.ExtraLabels" />
+<MainContent LabelsContent="@labelsContents?.MainLabels" />
 
-<VericalSeparator />
+@code {
+    public LanguageVariant Variant { get; set; } = Data.LanguageVariant.En;
+    private Labels? labelsContents;
 
-<p>
-    Olá! Sou Mateus Ryan, sou um engenheiro de software
-    de 23 anos com 4 anos de experiência em desenvolvimento geral e 2 em desenvolvimento web. Também sou graduado em
-    física
-    com alguns artigos publicados na área da matéria condensada. Nos últimos anos tenho
-    focado apenas na minha carreira na área de TI. Minhas experiências falam melhor do que eu mesmo no que diz respeito
-    ao que posso fazer, porém, algo que não mostram e também desejo ressaltar é minha capacidade de adaptação e rápido
-    aprendizado. De forma que as habilidades abordadas neste currículo são apenas uma fração do que eu sei e do que
-    posso aprender em poucos dias de prática.
-
-</p>
-
-<VericalSeparator />
-
-<h2 class="text-lg">
-    Experiência
-</h2>
-
-<div class="flex flex-col my-4 gap-6">
-    <ExperienceContainer Title="Engenheiro Freelancer" Project="Common Ecommerce Platform" From="jul de 2023"
-        To="set de 2023">
-        <p>
-            Common Ecommerce Platform é uma plataforma paara ecommerces de pequeno porte completa e customizável. Criada
-            inteiramente por mim com foco em
-            ser vendido sobe licença. Utiliza tecnologias modernas como Aspnet Core, Postgres, Redis, Sveltekit,
-            Tailwindcss entre outros. Neste exato momento está sendo implementada por uma empresa de venda de cosméticos de
-            pequeno porte em Campinas SP.
-
-        </p>
-    </ExperienceContainer>
-
-    <ExperienceContainer Title="Engenheiro Freelancer" Project="saionaracosmeticos.com.br" From="jul de 2022"
-        To="mai de 2023">
-        <p>
-            Desenvolvi, testei e fiz deploy na nuvem de um ecommerce do criado do zero com Golang e Next.js, integrando a
-            apis de pagamento
-            e de transporte de produtos. O site foi criado apenas por mim e está funcionando neste exato momento
-            recebendo compras de clientes em todo Brasil.
-        </p>
-    </ExperienceContainer>
-
-    <ExperienceContainer Title="Projeto Próprio" Project="Compilador .Net" From="set de 2023">
-        <p>
-            Desenvolvido durante o evento: Rinha de compiler de 2023, rinha-compiler-dotnet, é um compilador que recebe
-            uma árvore de sintaxe abstrata em json como especificado pelo evento e emite .Net IL na forma de uma Dll
-            executável pela CLR.
-        </p>
-    </ExperienceContainer>
-
-    <ExperienceContainer Title="Projeto Próprio" Project="go-yaml-cfg" From="jul de 2023">
-        <p>
-            Fornece uma interface de configuração Type Safe para Golang em torno de arquivos yaml, capazes de acessar
-            diretamente environment variables. Parcialmente inspirado na IConfigurationRoot do Aspnet core.
-        </p>
-    </ExperienceContainer>
-
-    <ExperienceContainer Title="Projeto Próprio" Project="echo_router_builder" From="jul de 2023">
-        <p>
-            Fornece um builder para o mapeamento de controladores para o Framework Echo em Golang. Inspirado no
-            framework Vapor da linguagem Swift, ainda está em evolução e receberá novas atualizações com integração de
-            injeção de dependências.
-        </p>
-    </ExperienceContainer>
-</div>
-
-<p class="pt-2">
-    Estes são apenas alguns de vários projetos que realizei durante os anos. Você verá mais projetos não comerciais em
-    meu Github incluindo este currículo escrito em Blazor!
-</p>
-
-<VericalSeparator />
-
-<h2 class="text-lg">
-    Educação
-</h2>
-
-<ul class="flex flex-col gap-4 mt-4">
-    <li class="flex flex-col">
-        <span class="font-bold">Graduação em Física pela Universidade Estadual da Paraíba</span>
-        <span class="text-gray-400">Finalizada em dezembro de 2022</span>
-    </li>
-
-    <li class="flex flex-col">
-        <span class="font-bold">Foundational C# with Microsoft por FreeCodeCamp e Microsoft</span>
-        <span class="text-gray-400">Finalizado em setembro de 2023</span>
-    </li>
-</ul>
+    protected override async Task OnInitializedAsync()
+    {
+        labelsContents = LabelsServ.GetLabels(Variant);
+    }
+}
