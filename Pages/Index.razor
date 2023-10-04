@@ -10,11 +10,13 @@
 }
 
 @code {
-    public string Language { get; set; } = "Pt";
+    [Parameter]
+    [SupplyParameterFromQuery(Name = "lang")]
+    public string? Language { get; set; }
     private Content? contents;
 
     protected override void OnInitialized()
     {
-        ContentsServ.GetContent(Language, out contents);
+        ContentsServ.GetContent(Language is not null ? Language : "En", out contents);
     }
 }

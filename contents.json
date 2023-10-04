@@ -7,7 +7,7 @@
             "EducationDatePrefix": "Finalizado em"
         },
         "MainInfo": {
-            "Name": "Mateus Ryan",
+            "Name": "Mateus Ryan Carmo Costa",
             "Title": "Engenheiro de Software e Físico",
             "Description": "Olá! Sou Mateus Ryan, sou um engenheiro de software de 23 anos com 4 anos de experiência em desenvolvimento geral e 2 em desenvolvimento web. Também sou graduado em física com alguns artigos publicados na área da matéria condensada. Nos últimos anos tenho focado apenas na minha carreira na área de TI. Minhas experiências falam melhor do que eu mesmo no que diz respeito ao que posso fazer, porém, algo que não mostram e também desejo ressaltar é minha capacidade de adaptação e rápido aprendizado. De forma que as habilidades abordadas neste currículo são apenas uma fração do que eu sei e do que posso aprender em poucos dias de prática.",
             "Experience": [
@@ -16,28 +16,28 @@
                     "ProjectTitle": "Common Ecommerce Platform",
                     "InitDate": "jul de 2023",
                     "EndDate": "mai de 2023",
-                    "Description": "Common Ecommerce Platform é uma plataforma para E-commerces de pequeno porte completa e customizável. Criada inteiramente por mim com foco em ser vendido sobe licença. Utiliza tecnologias modernas como Aspnet Core, Postgres, Redis, Sveltekit, Tailwindcss entre outros. Neste exato momento está sendo implementada por uma empresa de venda de cosméticos de pequeno porte em Campinas SP."
+                    "Description": "Common E-Commerce Platform é uma plataforma para E-commerces de pequeno porte completa e customizável. Criada inteiramente por mim com foco em ser vendido sobe licença. Utiliza tecnologias modernas como ASP.NET Core, Postgres, Redis, Sveltekit, Tailwindcss entre outros. Neste exato momento está sendo implementada por uma empresa de venda de cosméticos de pequeno porte em Campinas SP."
                 },
                 {
                     "JobTitle": "Engenheiro Freelancer",
                     "ProjectTitle": "saionaracosmeticos.com.br",
                     "InitDate": "jul de 2022",
                     "EndDate": "set de 2023",
-                    "Description": "Arquitetei, Desenvolvi e implementei na nuvem de E-commerce do criado do zero com Golang e Next.js, integrando a apis de pagamento e de transporte de produtos. O site foi criado apenas por mim e está funcionando neste exato momento recebendo compras de clientes em todo Brasil."
+                    "Description": "Arquitetei, Desenvolvi e implementei na nuvem um E-commerce do criado do zero com Golang e Next.js, integrando a apis de pagamento e de transporte de produtos. O site foi criado apenas por mim e está funcionando neste exato momento recebendo compras de clientes em todo Brasil."
                 },
                 {
                     "JobTitle": "Projeto Próprio",
                     "ProjectTitle": "Compilador .Net",
                     "InitDate": null,
                     "EndDate": "set de 2023",
-                    "Description": "Desenvolvido durante o evento: Rinha de compiler de 2023, rinha-compiler-dotnet, é um compilador que recebe uma árvore de sintaxe abstrata em json como especicado pelo evento e emite .Net IL na forma de uma Dll executável pela CLR."
+                    "Description": "Desenvolvido durante o evento: Rinha de compiler de 2023, rinha-compiler-dotnet, é um compilador que recebe uma árvore de sintaxe abstrata em json como especificado pelo evento e emite .Net IL na forma de uma Dll executável pela CLR."
                 },
                 {
                     "JobTitle": "Projeto Próprio",
                     "ProjectTitle": "go-yaml-cfg",
                     "InitDate": null,
                     "EndDate": "jul de 2023",
-                    "Description": "Fornece uma interface de configuração Type Safe para Golang em torno de arquivos yaml, capazes de acessar diretamente environment variables. Parcialmente inspirado na ICongurationRoot do Aspnet core."
+                    "Description": "Fornece uma interface de configuração Type Safe para Golang em torno de arquivos yaml, capazes de acessar diretamente environment variables. Parcialmente inspirado na IConfigurationRoot do ASP.NET Core."
                 },
                 {
                     "JobTitle": "Projeto Próprio",
@@ -67,7 +67,7 @@
             "Languages": "Idiomas"
         },
         "ExtraInfo": {
-            "AvatarUrl": "",
+            "AvatarUrl": "https://avatars.githubusercontent.com/u/46976272?v=4",
             "Contacts": {
                 "Email": "mthryan@protonmail.com",
                 "Phone": "(83)99800-3176",
@@ -103,6 +103,115 @@
                     "Description": [
                         "compreensão e leitura: Fluente",
                         "Fala e escrita: Avançado"
+                    ]
+                }
+            ]
+        }
+    },
+    "En": {
+        "MainLabels": {
+            "Experience": "Experience",
+            "ExperienceDateInfix": "-",
+            "Education": "Education",
+            "EducationDatePrefix": "Finished in"
+        },
+        "MainInfo": {
+            "Name": "Mateus Ryan Carmo Costa",
+            "Title": "Software Engineer and Phisicyst",
+            "Description": "Hi! I'm Mateus Ryan, a 23-year-old software engineer with 4 years of experience in general development and 2 in web development. I also have a bachelor's degree in physics with some articles published in the area of condensed matter. In recent years I have focused solely on my career in the IT area. My experiences speak better than I do in terms of what I can perform, however, something they don't show and I also want to highlight is my ability to adapt and learn quickly. So the skills covered in this curriculum are just a fraction of what I know and what I can learn in a few days of practice.",
+            "Experience": [
+                {
+                    "JobTitle": "Freelance Engineer",
+                    "ProjectTitle": "Common E-Commerce Platform",
+                    "InitDate": "jul de 2023",
+                    "EndDate": "may de 2023",
+                    "Description": "Common E-Commerce Platform is a complete and customizable platform for small E-commerce businesses. Created entirely by me with a focus on being sold under license. It uses modern technologies such as Aspnet Core, Postgres, Redis, Sveltekit, Tailwindcss among others. Right now it is being implemented by a small cosmetics sales company in Campinas, São Paulo, Brazil."
+                },
+                {
+                    "JobTitle": "Freelance Engineer",
+                    "ProjectTitle": "saionaracosmeticos.com.br",
+                    "InitDate": "jul de 2022",
+                    "EndDate": "sep de 2023",
+                    "Description": "Architected, developed and implemented in the cloud an E-commerce created from scratch with Golang and Next.js, integrating the payment and product transport APIs. The website was created just by me and is working right now receiving purchases from customers all over Brazil."
+                },
+                {
+                    "JobTitle": "Own project",
+                    "ProjectTitle": ".Net Compiler",
+                    "InitDate": null,
+                    "EndDate": "sep de 2023",
+                    "Description": "Developed during the event: \"2023 Compiler Rinha\" or Battle of Compilers, rinha-compiler-dotnet, is a compiler that receives an abstract syntax tree in json as specified by the event and outputs .Net IL in the form of an executable Dll ."
+                },
+                {
+                    "JobTitle": "Own project",
+                    "ProjectTitle": "go-yaml-cfg",
+                    "InitDate": null,
+                    "EndDate": "jul de 2023",
+                    "Description": "Provides a Type Safe configuration interface for Golang around yaml files, capable of directly accessing environment variables. Partially inspired by ASP.NET core's IConfigurationRoot."
+                },
+                {
+                    "JobTitle": "Own project",
+                    "ProjectTitle": "echo_router_builder",
+                    "InitDate": null,
+                    "EndDate": "jul de 2023",
+                    "Description": "Provides a builder for mapping controllers to the Echo Framework in Golang. Inspired by the Vapor framework made in the Swift language, it is still evolving and will receive new updates such as dependency injection integration."
+                }
+            ],
+            "ExperienceFootNote": "These are just a few of the many projects I have undertaken over the years. You'll see more non-commercial projects on my Github including this curriculum written in Blazor!",
+            "Education": [
+                { 
+                    "Title": "Bachelor's degree in physics from the Universidade Estadual da Paraíba",
+                    "Date": "December de 2022"
+                },
+                {
+                    "Title": "Foundational C# with Microsoft by FreeCodeCamp and Microsoft",
+                    "Date": "September de 2023"
+                }
+            ],
+            "EducationFootNote": null
+        },
+        "ExtraLabels": {
+            "Contacts": "Contacts",
+            "Localization": "Localization",
+            "Skills": "Skills",
+            "Languages": "Languages"
+        },
+        "ExtraInfo": {
+            "AvatarUrl": "https://avatars.githubusercontent.com/u/46976272?v=4",
+            "Contacts": {
+                "Email": "mthryan@protonmail.com",
+                "Phone": "+55 83998003176",
+                "Github": "github.com/Mth-Ryan",
+                "LinkedIn": "in/mateus-ryan-aa63b3210"
+            },
+            "Localization": "João Pessoa, Paraíba, Brazil",
+            "Skills": [
+                { "Title": "C#", "LevelPercent": 90 },
+                { "Title": "ASP.NET Core", "LevelPercent": 85 },
+                { "Title": "Go", "LevelPercent": 80 },
+                { "Title": "Typescript", "LevelPercent": 75 },
+                { "Title": "Next.js", "LevelPercent": 75 },
+                { "Title": "Sveltekit", "LevelPercent": 80 },
+                { "Title": ".Net Platform", "LevelPercent": 75 },
+                { "Title": "Linux", "LevelPercent": 95 },
+                { "Title": "AWS", "LevelPercent": 65 },
+                { "Title": "SQL", "LevelPercent": 80 },
+                { "Title": "NoSQL", "LevelPercent": 60 },
+                { "Title": "Nginx", "LevelPercent": 60 },
+                { "Title": "Docker", "LevelPercent": 75 },
+                { "Title": "Math analysis", "LevelPercent": 95 }
+            ],
+            "Languages": [
+                { 
+                    "Title": "Portuguese",
+                    "FullDescription": "Fluent",
+                    "Description": []
+                },
+                { 
+                    "Title": "English",
+                    "FullDescription": null,
+                    "Description": [
+                        "Comprehension and Reading: Fluent",
+                        "Speaking and Writing: Advanced"
                     ]
                 }
             ]
