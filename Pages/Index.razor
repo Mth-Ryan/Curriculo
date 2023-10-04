@@ -1,18 +1,20 @@
 ﻿@page "/"
 @using Curriculo.Data
-@inject LabelsService LabelsServ
+@inject ContentsService ContentsServ
 
 <PageTitle>Index</PageTitle>
 
-<SideBar LabelsContent="@labelsContents?.ExtraLabels" />
-<MainContent LabelsContent="@labelsContents?.MainLabels" />
+@if (contents is not null) {
+    <SideBar Labels="@contents!.ExtraLabels" Content="@contents!.ExtraInfo" />
+    <MainContent Labels="@contents!.MainLabels" Content="@contents!.MainInfo" />
+}
 
 @code {
-    public LanguageVariant Variant { get; set; } = Data.LanguageVariant.En;
-    private Labels? labelsContents;
+    public string Language { get; set; } = "Pt";
+    private Content? contents;
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
-        labelsContents = LabelsServ.GetLabels(Variant);
+        ContentsServ.GetContent(Language, out contents);
     }
 }

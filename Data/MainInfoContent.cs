@@ -2,10 +2,17 @@ namespace Curriculo.Data;
 
 public class Education
 {
+    public required string Title { get; set; }
+    public required string Date { get; set; }
 }
 
 public class Experience
 {
+    public required string JobTitle { get; set; }
+    public required string ProjectTitle { get; set; }
+    public required string? InitDate { get; set; }
+    public required string EndDate { get; set; }
+    public required string Description { get; set; }
 }
 
 public class MainInfoContent

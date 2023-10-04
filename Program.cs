@@ -4,10 +4,12 @@ using Curriculo.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var config = builder.Configuration;
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<LabelsService>();
+builder.Services.AddSingleton(new ContentsService(config));
 
 var app = builder.Build();
 
