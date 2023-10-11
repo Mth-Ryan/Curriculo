@@ -4,6 +4,7 @@ public class Contacts
 {
     public required string Email { get; set; }
     public required string Phone { get; set; }
+    public string? Whatsapp { get; set; }
     public required string Github { get; set; }
     public required string LinkedIn { get; set; }
 }
